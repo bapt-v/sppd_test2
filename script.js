@@ -279,7 +279,7 @@ window.onload=function(){
 	// }
 // fin apparition du header
 
-	setArticlesList(currentArticlesList)
+	setArticlesList(currentArticlesList);
 	setTabsList(currentTabsList);
 
 	if(currentTabsList.length>0){
