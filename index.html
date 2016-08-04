@@ -1,0 +1,80 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			
+			<div id="menu_button_div"><label for="menu_checkbox">&#xf0c9;</label></div>
+			<div id="search_input_div">
+				<input type="text" name="search_input" id="search_input" placeholder="Search" />
+				<div id="search_input_button_div"><a href="#" id="search_input_button" onclick="javascript:searchTerms()"> &#xf002;</a></div>
+			</div>
+			<div id="tabs_div"><a href="#" onclick="javascript:selectView('tabs_list_div')">&#xf24d;</a></div>
+			
+		</header>
+		<input type="checkbox" id="menu_checkbox" />
+		<div id="menu">
+			<ul id="menu_list">
+				<li><a href="#" onclick="javascript:selectView('article')">Article</a></li>
+				<li><a href="#" onclick="javascript:selectView('articles_list_div')">Search</a></li>
+				<li><a href="#" onclick="javascript:selectView('tabs_list_div')">Tabs</a></li>
+				<li><a href="#" onclick="javascript:selectView('login_div')">Login</a></li>
+				<li><a href="#" onclick="javascript:selectView('settings_div')">Settings</a></li>
+			</ul>
+			<ul id="article_menu">
+			</ul>
+		</div>
+		<content>
+			<!-- Article -->
+			<div class="content_type" id="article">
+				<div id="article_title"></div>
+				<div id="article_content">
+				</div>
+			</div>
+			
+			<!-- Résultats recherche -->
+			<div class="content_type" id="articles_list_div">
+				<ul id="articles_list">
+				</ul>
+			</div>
+			
+			<!-- Onglets -->
+			<div class="content_type" id="tabs_list_div">
+				<ul id="tabs_list">
+				</ul>
+			</div>
+			
+			<!-- Login -->
+			<div class="content_type" id="login_div">
+				<div id="login_form">
+					<div>
+						<label for="username">Username</label><input type="text" name="username" id="username" />
+					</div>
+					<div>
+						<label for="password">Password</label><input type="password" name="password" id="password" />
+					</div>
+					<div>
+						<input type="button" value="Log In" />
+					</div>
+				</div>
+			</div>
+			
+			<!-- Paramètres -->
+			<div class="content_type" id="settings_div">
+				<div id="settings">
+					Default language : 
+					<select>
+						<option value="en">English</option>
+						<option value="fr">Français</option>
+						<option value="it">Italiano</option>
+					</select>
+				</div>
+			</div>
+		</content>
+	</body>
+</html>
