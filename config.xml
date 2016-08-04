@@ -16,7 +16,10 @@
   <author href="https://build.phonegap.com" email="support@phonegap.com">
       BV
   </author>
+
   
   <access origin="*" />
+  
+  <allow-navigation href="*" />
   
 </widget>
