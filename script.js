@@ -239,6 +239,9 @@ function searchTerms(){
 
 window.onload=function(){
 
+	$.support.cors = true;
+	$.mobile.allowCrossDomainPages = true;
+
 //apparition du header
 	// Hide Header on on scroll down
 	var didScroll;
