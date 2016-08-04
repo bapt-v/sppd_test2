@@ -16,8 +16,6 @@
   <author href="https://build.phonegap.com" email="support@phonegap.com">
       BV
   </author>
-
-  <plugin name="nl.x-services.plugins.socialsharing" spec="4.3.8" source="pgb" />
   
   <access origin="*" />
   
