@@ -1,0 +1,159 @@
+@font-face {
+    font-family:"fontawesome";
+    src:url('fontawesome-webfont.ttf');
+}
+
+body {
+  padding-top:10vw; 
+}
+
+header {
+  background:#444;
+  color:#FFF;
+  height:10vw;
+  position:fixed;
+  top:0;
+  left:0;
+  transition:top 0.2s ease-in-out;
+  width:100%;
+}
+
+header div {
+	vertical-align:top;
+}
+
+header a {
+  text-decoration:none;
+  color:#FFF;
+}
+
+content{
+	display:block;
+	height:1800px;
+}
+
+#menu_button_div{
+	font-family:fontawesome;
+	display:inline-block;
+	width:12vw;
+	height:9vw;
+	font-size:9vw;
+	text-align:center;
+}
+
+#search_input_div{
+	display:inline-block;
+	width:65vw;
+	text-align:top;
+	padding:0px;
+	height:10vw;
+}
+
+#search_input{
+	width:50vw;
+	height:8vw;
+	font-size:6vw;
+	margin:0px;
+}
+
+#search_input_button_div{
+	font-family:fontawesome;
+	display:inline-block;
+	font-size:9vw;
+	width:12vw;
+}
+
+#tabs_div{
+	font-family:fontawesome;
+	display:inline-block;
+	font-size:9vw;
+	width:12vw;
+	text-align:center;
+}
+
+/*we'll add this class using javascript*/
+.nav-up {
+  top: -10vw; /*same as header height. */
+}
+
+#menu{
+	visibility:hidden;
+	position:fixed;
+	top:10vw;
+	left:0px;
+	background-color:#444;
+	color:white;
+	transition:visibility 0s ease-out;
+}
+
+#menu a{
+	color:white;
+}
+
+#menu_checkbox{
+	display:none;
+}
+
+#menu_checkbox:checked+#menu{
+	visibility:visible;
+}
+
+.content_type{
+	display:none;
+}
+
+#article{
+	display:block;
+}
+
+@media(min-width:800px) {
+
+	body {
+	  padding-top:50px; 
+	}
+
+	header {
+	  height:50px;
+	}
+
+	content{
+		height:1800px;
+	}
+
+	#menu_button_div{
+		width:60px;
+		height:45px;
+		font-size:45px;
+	}
+
+	#search_input_div{
+		height:50px;
+	}
+
+	#search_input{
+		width:250px;
+		height:40px;
+		font-size:30px;
+	}
+
+	#search_input_button_div{
+
+		font-size:45px;
+		width:60px;
+	}
+
+	#tabs_div{
+		font-size:45px;
+		width:60px;
+	}
+
+	/*we'll add this class using javascript*/
+	.nav-up {
+	  top: -50px; /*same as header height. */
+	}
+
+	#menu{
+		top:50px;
+		left:0px;
+	}
+}
